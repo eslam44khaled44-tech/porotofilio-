@@ -1,0 +1,566 @@
+
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Asmaa Khaled - Front-End Developer Portfolio">
+
+    <title>Asmaa Khaled | Front-End Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="ASmaa.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">
+                Asmaa<span>.</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                <li><a href="#about" data-en="About" data-ar="عني">About</a></li>
+                <li><a href="#skills" data-en="Skills" data-ar="مهاراتي">Skills</a></li>
+                <li><a href="#projects" data-en="Projects" data-ar="مشاريعي">Projects</a></li>
+                <li><a href="#contact" data-en="Contact" data-ar="تواصل معي">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="language-btn" id="languageBtn" aria-label="Change language">
+                    AR
+                </button>
+
+                <button class="menu-btn"
+                        id="menuBtn"
+                        aria-label="Open navigation menu"
+                        aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Home Section -->
+        <section class="hero section" id="home">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <p class="welcome" data-en="WELCOME TO MY PORTFOLIO"
+                       data-ar="أهلاً بيكم في البورتفوليو الخاص بيا">
+                        WELCOME TO MY PORTFOLIO
+                    </p>
+
+                    <h1>
+                        <span data-en="Hi, I'm" data-ar="أهلاً، أنا">Hi, I'm</span>
+                        <span class="highlight">Asmaa Khaled</span>
+                    </h1>
+
+                    <h2 data-en="Front-End Developer"
+                        data-ar="مطورة واجهات أمامية">
+                        Front-End Developer
+                    </h2>
+
+                    <p class="hero-description"
+                       data-en="I'm learning to build modern, responsive, and user-friendly websites using HTML, CSS, and JavaScript."
+                       data-ar="أنا في بداية رحلتي في تطوير الواجهات الأمامية، وبطور مهاراتي في إنشاء مواقع عصرية ومتجاوبة باستخدام HTML وCSS وJavaScript.">
+                        I'm learning to build modern, responsive, and
+                        user-friendly websites using HTML, CSS, and JavaScript.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#projects" class="btn btn-primary">
+                            <span data-en="View My Projects"
+                                  data-ar="شاهدي مشاريعي">View My Projects</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline"
+                           data-en="Contact Me"
+                           data-ar="تواصلي معي">
+                            Contact Me
+                        </a>
+
+                    </div>
+
+                    <div class="social-links">
+
+                        <a href="https://github.com/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="https://wa.me/201121134514"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-image">
+
+                    <div class="image-frame">
+
+                        <!-- Replace profile.jpg with your own photo -->
+                        <img src="profile.jpg"
+                             alt="Asmaa Khaled"
+                             class="profile-img"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+
+                        <div class="image-placeholder">
+                            <i class="fa-solid fa-user"></i>
+                            <span data-en="Add Your Photo"
+                                  data-ar="أضيفي صورتك هنا">
+                                Add Your Photo
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="floating-badge">
+                        <i class="fa-solid fa-code"></i>
+                        <span>HTML · CSS · JS</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About Section -->
+        <section class="section about-section" id="about">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-subtitle"
+                       data-en="GET TO KNOW ME"
+                       data-ar="تعرفوا عليّ">
+                        GET TO KNOW ME
+                    </p>
+
+                    <h2 data-en="About Me"
+                        data-ar="نبذة عني">
+                        About Me
+                    </h2>
+
+                    <span class="heading-line"></span>
+                </div>
+
+                <div class="about-content">
+
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+
+                        <h3 data-en="My Journey"
+                            data-ar="رحلتي في البرمجة">
+                            My Journey
+                        </h3>
+
+                        <p data-en="I'm Asmaa Khaled, an aspiring Front-End Developer at the beginning of my coding journey. I'm developing my skills in HTML, CSS, and JavaScript and learning how to turn creative ideas into websites."
+                           data-ar="أنا أسماء خالد، مطورة واجهات أمامية في بداية رحلتي في البرمجة. بعمل على تطوير مهاراتي في HTML وCSS وJavaScript، وبتعلم إزاي أحول الأفكار الإبداعية إلى مواقع ويب.">
+                            I'm Asmaa Khaled, an aspiring Front-End Developer
+                            at the beginning of my coding journey. I'm developing
+                            my skills in HTML, CSS, and JavaScript and learning
+                            how to turn creative ideas into websites.
+                        </p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+
+                        <h3 data-en="My Goal"
+                            data-ar="هدفي">
+                            My Goal
+                        </h3>
+
+                        <p data-en="My goal is to create attractive, accessible, and responsive websites while continuously improving my skills and learning new technologies."
+                           data-ar="هدفي إني أصمم مواقع جذابة وسهلة الاستخدام ومتجاوبة مع كل الشاشات، وأفضل أطور مهاراتي وأتعلم تقنيات جديدة باستمرار.">
+                            My goal is to create attractive, accessible,
+                            and responsive websites while continuously
+                            improving my skills and learning new technologies.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Skills Section -->
+        <section class="section skills-section" id="skills">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-subtitle"
+                       data-en="WHAT I WORK WITH"
+                       data-ar="التقنيات اللي بتعلمها">
+                        WHAT I WORK WITH
+                    </p>
+
+                    <h2 data-en="My Skills"
+                        data-ar="مهاراتي">
+                        My Skills
+                    </h2>
+
+                    <span class="heading-line"></span>
+                </div>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <i class="fa-brands fa-html5 html-icon"></i>
+                        <h3>HTML5</h3>
+                        <p data-en="Building website structure"
+                           data-ar="بناء هيكل صفحات الويب">
+                            Building website structure
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="fa-brands fa-css3-alt css-icon"></i>
+                        <h3>CSS3</h3>
+                        <p data-en="Styling and responsive layouts"
+                           data-ar="تنسيق المواقع وتصميم الشاشات المتجاوبة">
+                            Styling and responsive layouts
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="fa-brands fa-js js-icon"></i>
+                        <h3>JavaScript</h3>
+                        <p data-en="Adding interactivity to websites"
+                           data-ar="إضافة التفاعل إلى المواقع">
+                            Adding interactivity to websites
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Projects Section -->
+        <section class="section projects-section" id="projects">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-subtitle"
+                       data-en="SOME THINGS I'VE WORKED ON"
+                       data-ar="نماذج من أعمالي">
+                        SOME THINGS I'VE WORKED ON
+                    </p>
+
+                    <h2 data-en="My Projects"
+                        data-ar="مشاريعي">
+                        My Projects
+                    </h2>
+
+                    <span class="heading-line"></span>
+
+                    <p class="section-description"
+                       data-en="Here are some projects I can showcase as I continue developing my skills."
+                       data-ar="هنا هنعرض نماذج من مشاريعي مع استمرار تطوير مهاراتي.">
+                        Here are some projects I can showcase as I continue
+                        developing my skills.
+                    </p>
+                </div>
+
+
+                <div class="projects-grid">
+
+                    <!-- Project 1 -->
+                    <article class="project-card">
+
+                        <div class="project-visual visual-one">
+                            <i class="fa-solid fa-window-maximize"></i>
+                            <span>01</span>
+                        </div>
+
+                        <div class="project-info">
+
+                            <h3 data-en="Landing Page"
+                                data-ar="صفحة هبوط">
+                                Landing Page
+                            </h3>
+
+                            <p data-en="A modern landing page with a clean layout and responsive design."
+                               data-ar="صفحة هبوط عصرية بتصميم بسيط ومتجاوب مع مختلف الشاشات.">
+                                A modern landing page with a clean layout
+                                and responsive design.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+
+                            <a href="#contact"
+                               class="project-link"
+                               data-en="Project Link"
+                               data-ar="رابط المشروع">
+                                Project Link
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+
+                        <div class="project-visual visual-two">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <span>02</span>
+                        </div>
+
+                        <div class="project-info">
+
+                            <h3 data-en="Responsive Website"
+                                data-ar="موقع متجاوب">
+                                Responsive Website
+                            </h3>
+
+                            <p data-en="A website layout designed to work across mobile, tablet, and desktop screens."
+                               data-ar="تصميم موقع يعمل بشكل مناسب على الموبايل والتابلت والكمبيوتر.">
+                                A website layout designed to work across
+                                mobile, tablet, and desktop screens.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+
+                            <a href="#contact"
+                               class="project-link"
+                               data-en="Project Link"
+                               data-ar="رابط المشروع">
+                                Project Link
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+
+                        <div class="project-visual visual-three">
+                            <i class="fa-brands fa-js"></i>
+                            <span>03</span>
+                        </div>
+
+                        <div class="project-info">
+
+                            <h3 data-en="JavaScript App"
+                                data-ar="تطبيق JavaScript">
+                                JavaScript App
+                            </h3>
+
+                            <p data-en="An interactive application that demonstrates JavaScript functionality."
+                               data-ar="تطبيق تفاعلي يوضح استخدام JavaScript في إضافة وظائف للموقع.">
+                                An interactive application that demonstrates
+                                JavaScript functionality.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                            </div>
+
+                            <a href="#contact"
+                               class="project-link"
+                               data-en="Project Link"
+                               data-ar="رابط المشروع">
+                                Project Link
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <p class="projects-note"
+                   data-en="Note: Replace these sample projects with your real projects and links before publishing."
+                   data-ar="ملحوظة: استبدلي المشاريع التجريبية بمشاريعك الحقيقية وروابطها قبل نشر الموقع.">
+                    Note: Replace these sample projects with your real
+                    projects and links before publishing.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-subtitle"
+                       data-en="LET'S CONNECT"
+                       data-ar="خلينا نتواصل">
+                        LET'S CONNECT
+                    </p>
+
+                    <h2 data-en="Contact Me"
+                        data-ar="تواصل معي">
+                        Contact Me
+                    </h2>
+
+                    <span class="heading-line"></span>
+
+                    <p class="section-description"
+                       data-en="Have a project idea or want to connect? Feel free to reach out."
+                       data-ar="عندك فكرة مشروع أو حابة تتواصلي معايا؟ يسعدني إنك تبعتيلي.">
+                        Have a project idea or want to connect?
+                        Feel free to reach out.
+                    </p>
+                </div>
+
+
+                <div class="contact-grid">
+
+                    <a href="https://wa.me/201121134514"
+                       class="contact-card"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                        <h3>WhatsApp</h3>
+
+                        <p data-en="Let's chat"
+                           data-ar="راسليني">
+                            Let's chat
+                        </p>
+
+                    </a>
+
+
+                    <a href="mailto:YOUR_EMAIL@example.com"
+                       class="contact-card">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <h3>Email</h3>
+
+                        <p data-en="Send me an email"
+                           data-ar="ابعتيلي إيميل">
+                            Send me an email
+                        </p>
+
+                    </a>
+
+
+                    <a href="https://github.com/"
+                       class="contact-card"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        <i class="fa-brands fa-github"></i>
+
+                        <h3>GitHub</h3>
+
+                        <p data-en="Explore my code"
+                           data-ar="شوفي أكوادي">
+                            Explore my code
+                        </p>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <a href="#home" class="logo">
+                Asmaa<span>.</span>
+            </a>
+
+            <p data-en="Designed & built by Asmaa Khaled"
+               data-ar="تصميم وتطوير أسماء خالد">
+                Designed & built by Asmaa Khaled
+            </p>
+
+            <p class="copyright">
+                &copy; <span id="year"></span> Asmaa Khaled
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript File -->
+    <script src="ASmaa.js"></script>
+
+</body>
+</html>
